@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="54dp"
+    android:layout_width="@dimen/cocktail_card_size"
+    android:layout_height="@dimen/cocktail_card_size"
+    android:layout_margin="4dp"
+    android:foreground="@drawable/card_gradient"
+   >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"        >
+
+        <ImageView
+            android:id="@+id/img_cocktail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:foreground="@drawable/card_gradient"
+            tools:src="@drawable/purple_rain_detail" />
+
+        <TextView
+            android:id="@+id/str_cocktail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center_horizontal"
+            tools:text="@string/purple_rain"
+            android:textColor="@color/white"
+            android:textSize="@dimen/cocktail_name_card_size"
+            android:layout_marginBottom="34dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

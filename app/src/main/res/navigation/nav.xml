@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav"
+    app:startDestination="@id/fragmentCocktailFeed">
+
+    <fragment
+        android:id="@+id/fragmentCocktailFeed"
+        android:name="ru.akumakeito.cocktailbar.ui.FragmentCocktailFeed"
+        android:label="FragmentCocktailFeed" >
+        <action
+            android:id="@+id/action_fragmentCocktailFeed_to_fragmentAboutCocktail"
+            app:destination="@id/fragmentAboutCocktail" />
+        <action
+            android:id="@+id/action_fragmentCocktailFeed_to_fragmentNewCocktail"
+            app:destination="@id/fragmentNewCocktail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAboutCocktail"
+        android:name="ru.akumakeito.cocktailbar.ui.FragmentAboutCocktail"
+        android:label="FragmentAboutCocktail" />
+    <fragment
+        android:id="@+id/fragmentNewCocktail"
+        android:name="ru.akumakeito.cocktailbar.ui.FragmentNewCocktail"
+        android:label="FragmentNewCocktail" />
+    <fragment
+        android:id="@+id/fragmentNoCocktails2"
+        android:name="ru.akumakeito.cocktailbar.ui.FragmentNoCocktails"
+        android:label="FragmentNoCocktails" >
+        <action
+            android:id="@+id/action_fragmentNoCocktails2_to_fragmentNewCocktail"
+            app:destination="@id/fragmentNewCocktail" />
+    </fragment>
+</navigation>

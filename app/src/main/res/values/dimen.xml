@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size_common">16sp</dimen>
+    <dimen name="font_size_primary">32sp</dimen>
+    <dimen name="fab_size">80dp</dimen>
+    <dimen name="cocktail_card_size">160dp</dimen>
+    <dimen name="cocktail_name_card_size">18sp</dimen>
+    <dimen name="spacing_common">16dp</dimen>
+</resources>
